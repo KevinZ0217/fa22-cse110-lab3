@@ -34,7 +34,7 @@ div + h1 {
     background-color: yellow;
 }
 
-.special {
+.dadate {
     background-color: yellow;   
 }
 
@@ -57,7 +57,7 @@ ul {
     padding: .5cm;
 }
 
-.block,
+.the-brain-storm,
 li {
     border: 2em solid; 
     padding: .6em;
@@ -68,15 +68,15 @@ ul {
     list-style:armenian;
 }
 
-.block {
+.the-brain-storm {
     display: block;
 }
 
-.inline {
+.introd {
     display: inline;
 }
 
-audio {
+#audio2 {
     width: 350px;
     height: 150px;
     margin-top: 10em;
@@ -91,13 +91,13 @@ audio {
 
 }
 
-video {
+#video2 {
     margin: 10em,10em,10em,10em;
     padding: .5cm, .5cm, .5cm, .5cm;
     display: flex;
 }
 
-.grid-container {
+.un-attendance {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
@@ -105,8 +105,8 @@ video {
     grid-template-rows: auto auto auto;
     padding: 10px;
 }
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+.un-attendee {
+    background-color: rgba(142, 40, 40, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;

@@ -4,24 +4,24 @@
          <!--document metadata-->
         <meta charset="UTF-8">
         <title>Meeting Minutes</title>
-        <link rel="stylesheet" href="/fa22-cse110-lab3/Stylesheet.css">
+        <link rel="stylesheet" href="Stylesheet.css">
         <style>
             p {
                 color:rgb(100,100,100)
             }
-            .flex-container {
+            .attendance {
                 display: flex;
                 background-color: DodgerBlue;
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: space-around;
             }
-            .flex-container > div {
+            .attendance> div {
                 background-color: green;
                 
             }
             body{
-                background-color: white;
+                background-color: rgb(69, 24, 24);
             }
             @media only screen and (max-width: 600px) {
                 body {
@@ -32,25 +32,25 @@
     </head>
     <body> 
         
-        <h1>Pic of the day</h1>
+        <h1 class="introd">Pic of the day</h1>
         <img src="wp4040614-2k-wallpapers.jpg" alt="Da head" width="500" height="600">
         <!--content sectioning-->
         <header>
             <div>meeting section</div>
             <h1 id="newsize">First Brain Storm for team 28</h1>
-            <h4>date:2022/10/08</h4>
+            <h4 class="dadate">date:2022/10/08</h4>
         </header>
         <main>
-            <audio controls>
+            <audio controls id = "audio2">
                 <source src="652983__josefpres__bass-loops-093-with-drums-short-loop-120-bpm.wav" type="audio/wav">
               Your browser does not support the audio element.
             </audio>
-            <video width="320" height="240" controls>
+            <video width="320" height="240" controls id="video2">
                 <source src="WeChat_20221009214600.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <section>
-            <h3 id="the brain storm">brainstorming</h3>
+            <h3 class="the-brain-storm">brainstorming</h3>
             <p>
                 <em>We are brainstorming right now, storm brain out of us.</em>
             </p>
@@ -70,21 +70,19 @@
             </p>
             </section>
             <section>
-            <div class="flex-container">attendence list</div>
+            <div class="attendance">attendence list</div>
             <div><b><a target = "blank">attendence list</a></b></div>
-                <ul>
-                    <li><div style="order: 3">kevin</div></li>
-                    <li><div style="flex-grow: 8">steven</div></li>
-                    <li><div style="flex-shrink: 0">henry</div></li>
+                <ul class="attendance">
+                    <li>kevin</div></li>
+                    <li>steven</div></li>
+                    <li>henry</div></li>
                 </ul>
-            <div class="grid-container"><strong>un-attendence list</strong>
-            <nav>
-                <ol>
-                    <div class ="grid-item"><i>Kelvin</i></li></div>
-                    <div class ="grid-item">Steve</li></div>
-                    <div class ="grid-item">henri</li></div>
+            <div class="un-attendance"><strong>un-attendence list</strong>
+                <ol class="un-attendance">
+                    <div class="un-attendee"><li><i>Kelvin</i></li></div>
+                    <div class="un-attendee"><li>Steve</li></div>
+                    <div class="un-attendee"><li>henri</li></div>
                 </ol>
-            </nav>
             </div>
             </section>
             <section>
