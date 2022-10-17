@@ -1,0 +1,87 @@
+/*this is the setting for header*/
+h1 {
+    position: fixed;
+    text-align: center;
+    font-size: larger;
+    color: blue;
+    margin-bottom: .3cm;
+    text-decoration: dashed;
+    background-color: blanchedalmond;
+}
+
+h1:hover {
+    background-color: blueviolet;
+}
+
+h2 {
+    position: static;
+    margin-top: .2em;
+    color: #fff;
+    font-size: large;
+    max-width: 4cm;
+    min-width: none;
+}
+
+h2:active {
+    background-color: blue;
+}
+
+p,
+ul {
+    border: 2px;
+    padding: .5cm;
+}
+
+.block,
+li {
+    border: 2em solid; 
+    padding: .6em;
+}
+
+ul {
+    display: flex;
+    list-style:armenian;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+audio {
+    width: 350px;
+    height: 150px;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 25px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2cm;
+
+}
+
+video {
+    margin: 10em,10em,10em,10em;
+    padding: .5cm, .5cm, .5cm, .5cm;
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

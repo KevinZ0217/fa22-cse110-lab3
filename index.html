@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
          <!--document metadata-->
         <meta charset="UTF-8">
         <title>Meeting Minutes</title>
-        <link rel="author" href="/about">
+        <link rel="stylesheet" href="'Stylesheet.css">
+        <style>
+            p {
+                color:rgb(100,100,100)
+            }
+            .flex-container {
+                display: flex;
+                background-color: DodgerBlue;
+            }
+            .flex-container > div {
+                background-color: green;
+            }
+        </style>
     </head>
     <body> 
         <h1>Pic of the day</h1>
@@ -23,7 +35,7 @@
             <video width="320" height="240" controls>
                 <source src="WeChat_20221009214600.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>
+            </video>
             <section>
             <h3>brainstorming</h3>
             <p>
@@ -31,7 +43,7 @@
             </p>
             </section>
             <section>
-            <h3>check-ins</h3>
+            <h2>check-ins</h2>
             <hr>
             <p>
                 We are checking in right now, <br>check really in.
@@ -45,23 +57,22 @@
             </p>
             </section>
             <section>
-            <div>attendence list</div>
-            <h2><b>attendence list</b></h2>
-            <nav>
+            <div class="flex-container">attendence list</div>
+            <div><b>attendence list</b></div>
                 <ul>
                     <li><i>Kevin</i></li>
                     <li>Steven</li>
                     <li>henry</li>
                 </ul>
-            </nav>
-            <strong>un-attendence list</strong>
+            <div class="grid-container"><strong>un-attendence list</strong>
             <nav>
                 <ol>
-                    <li><i>Kelvin</i></li>
-                    <li>Steve</li>
-                    <li>henri</li>
+                    <div class ="grid-item"><i>Kelvin</i></li></div>
+                    <div class ="grid-item">Steve</li></div>
+                    <div class ="grid-item">henri</li></div>
                 </ol>
             </nav>
+            </div>
             </section>
             <section>
                 <details>
