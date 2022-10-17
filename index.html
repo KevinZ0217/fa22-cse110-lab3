@@ -12,19 +12,32 @@
             .flex-container {
                 display: flex;
                 background-color: DodgerBlue;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
             .flex-container > div {
                 background-color: green;
+                
+            }
+            body{
+                background-color: white;
+            }
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
             }
         </style>
     </head>
     <body> 
+        
         <h1>Pic of the day</h1>
         <img src="wp4040614-2k-wallpapers.jpg" alt="Da head" width="500" height="600">
         <!--content sectioning-->
         <header>
             <div>meeting section</div>
-            <h1>First Brain Storm for team 28</h1>
+            <h1 id="newsize">First Brain Storm for team 28</h1>
             <h4>date:2022/10/08</h4>
         </header>
         <main>
@@ -37,13 +50,13 @@
                 Your browser does not support the video tag.
             </video>
             <section>
-            <h3>brainstorming</h3>
+            <h3 id="the brain storm">brainstorming</h3>
             <p>
                 <em>We are brainstorming right now, storm brain out of us.</em>
             </p>
             </section>
             <section>
-            <h2>check-ins</h2>
+            <h2 target="here">check-ins</h2>
             <hr>
             <p>
                 We are checking in right now, <br>check really in.
@@ -58,11 +71,11 @@
             </section>
             <section>
             <div class="flex-container">attendence list</div>
-            <div><b>attendence list</b></div>
+            <div><b><a target = "blank">attendence list</a></b></div>
                 <ul>
-                    <li><i>Kevin</i></li>
-                    <li>Steven</li>
-                    <li>henry</li>
+                    <li><div style="order: 3">kevin</div></li>
+                    <li><div style="flex-grow: 8">steven</div></li>
+                    <li><div style="flex-shrink: 0">henry</div></li>
                 </ul>
             <div class="grid-container"><strong>un-attendence list</strong>
             <nav>
@@ -108,4 +121,5 @@
         
         
     </body>
+
 </html>

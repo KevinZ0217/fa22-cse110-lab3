@@ -1,4 +1,9 @@
 /*this is the setting for header*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 h1 {
     position: fixed;
     text-align: center;
@@ -9,8 +14,24 @@ h1 {
     background-color: blanchedalmond;
 }
 
+div p {
+    background-color: yellow;
+}
+
 h1:hover {
     background-color: blueviolet;
+}
+
+div ~ h2 {
+    background-color: grey;
+}
+
+div + h1 {
+    background-color: yellow;
+}
+
+.special {
+    background-color: yellow;   
 }
 
 h2 {
@@ -76,6 +97,8 @@ video {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
+    grid-column-start: col-start 2;
+    grid-template-rows: auto auto auto;
     padding: 10px;
 }
 .grid-item {
@@ -84,4 +107,17 @@ video {
     padding: 20px;
     font-size: 30px;
     text-align: center;
+}
+
+#newsize {
+    text-align: left;
+    color:rgba(255, 255, 255, 0.8)
+}
+  
+h2[target] {
+    background-color: yellow;
+}
+
+a:hover {
+    color: hotpink;
 }
